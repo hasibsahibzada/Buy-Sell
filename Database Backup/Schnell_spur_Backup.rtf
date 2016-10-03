@@ -1,0 +1,127 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 -- phpMyAdmin SQL Dump\
+-- version 3.3.9.2\
+-- http://www.phpmyadmin.net\
+--\
+-- Host: localhost\
+-- Generation Time: Jul 18, 2014 at 12:20 PM\
+-- Server version: 5.5.9\
+-- PHP Version: 5.3.6\
+\
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";\
+\
+--\
+-- Database: `buysell`\
+--\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `product`\
+--\
+\
+CREATE TABLE `product` (\
+  `Pid` int(20) NOT NULL AUTO_INCREMENT,\
+  `Pname` varchar(20) NOT NULL,\
+  `Price` int(5) NOT NULL,\
+  `Description` varchar(500) NOT NULL,\
+  `Owner_ID` int(11) NOT NULL,\
+  `image` varchar(100) NOT NULL COMMENT 'image address',\
+  `Latitude` double DEFAULT NULL,\
+  `Longitude` double DEFAULT NULL,\
+  PRIMARY KEY (`Pid`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;\
+\
+--\
+-- Dumping data for table `product`\
+--\
+\
+INSERT INTO `product` VALUES(1, 'book', 20, 'Move the vertical slider to chose color and then click into color square on the left to get HTML color code for desired color cast.  You can start with your own color by writing its color code in upper input field', 1, 'http://141.54.152.162/buysell/productpictures/aynaki.jpg', 50.9841, 11.3295);\
+INSERT INTO `product` VALUES(2, 'piano', 10, 'new great flower', 1, 'http://141.54.152.162/buysell/productpictures/teapot.jpg', 50.9841, 11.329);\
+INSERT INTO `product` VALUES(3, 'shoes', 33, 'hi this is showe', 0, 'http://141.54.152.162/buysell/productpictures/glasses.jpg', 50.9841, 11.3295);\
+INSERT INTO `product` VALUES(4, 'jaket', 100, 'alskdfj;aklsjdf', 0, 'http://141.54.152.162/buysell/productpictures/bicycle.jpg', 50.9841, 11.3297);\
+INSERT INTO `product` VALUES(5, 'my laptop', 400, 'my good laptop', 2, 'http://141.54.152.162/buysell/productpictures/20140626-171803img.jpg', 50.9841, 11.3291);\
+INSERT INTO `product` VALUES(8, 'my jacket', 25, 'gooood', 2, 'http://141.54.152.162/buysell/productpictures/20140627-082707img.jpg', 11.3282, 50.9841);\
+INSERT INTO `product` VALUES(9, 'type writer', 500, 'my good type writer it is very old', 2, 'http://141.54.152.162/buysell/productpictures/20140627-084054img.jpg', 11.3288, 50.9842);\
+INSERT INTO `product` VALUES(10, 'hi', 5, 'guy', 2, 'http://141.54.152.162/buysell/productpictures/20140627-085203img.jpg', 11.3289, 50.9838);\
+INSERT INTO `product` VALUES(11, 'my product', 54, 'the jenis product', 2, 'http://141.54.152.162/buysell/productpictures/20140627-194457img.jpg', 11.3291, 50.9842);\
+INSERT INTO `product` VALUES(12, 'my new device', 56, 'gajzxhwhdhd', 2, 'http://141.54.152.162/buysell/productpictures/20140627-195834img.jpg', 11.3291, 50.9843);\
+INSERT INTO `product` VALUES(13, 'my arduino', 54, 'hsgzuwhsh', 2, 'http://141.54.152.162/buysell/productpictures/20140627-200113img.jpg', 50.9842, 11.3291);\
+INSERT INTO `product` VALUES(14, 'hi', 5434, 'haushwuha', 2, 'http://141.54.152.162/buysell/productpictures/20140627-200251img.jpg', 50.9842, 11.3291);\
+INSERT INTO `product` VALUES(15, 'my home', 5487, 'gsgsgeys', 2, 'http://141.54.152.162/buysell/productpictures/20140704-115632img.jpg', 50.9843, 11.3291);\
+INSERT INTO `product` VALUES(16, 'hdjxhx', 979767, 'bshshyss', 2, 'http://141.54.152.162/buysell/productpictures/20140704-120951img.jpg', 50.9843, 11.329);\
+INSERT INTO `product` VALUES(17, 'my new book', 545, 'this is a good book', 2, 'http://141.54.152.162/buysell/productpictures/20140704-123330img.jpg', 50.9843, 11.3291);\
+INSERT INTO `product` VALUES(18, 'my laptop', 54, 'vsgsyshsydh', 2, 'http://141.54.152.162/buysell/productpictures/20140704-123419img.jpg', 50.9843, 11.3291);\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `profile`\
+--\
+\
+CREATE TABLE `profile` (\
+  `uid` int(11) NOT NULL AUTO_INCREMENT,\
+  `Name` varchar(30) NOT NULL COMMENT 'First name',\
+  `lastname` varchar(30) NOT NULL COMMENT 'last name',\
+  `age` int(11) NOT NULL COMMENT 'Age of users',\
+  `Gender` varchar(10) NOT NULL,\
+  `emailaddr` varchar(40) NOT NULL COMMENT 'user email address',\
+  `username` varchar(60) NOT NULL,\
+  `password` varchar(30) NOT NULL,\
+  PRIMARY KEY (`uid`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;\
+\
+--\
+-- Dumping data for table `profile`\
+--\
+\
+INSERT INTO `profile` VALUES(1, 'hasibullah', 'sahibzada', 0, '', '', 'hasibsahibzada', 'Hasibdell555');\
+INSERT INTO `profile` VALUES(2, 'Ashin', 'mandal', 0, '', '', 'ashin', '1234');\
+INSERT INTO `profile` VALUES(3, 'Asma', 'Naaz', 0, '', '', 'asma', 'asma123');\
+INSERT INTO `profile` VALUES(4, 'tamim', 'islam', 0, '', '', 'tamim', 'tamim123');\
+INSERT INTO `profile` VALUES(6, 'roman', 'khan', 0, '', '', 'roman', 'zormati');\
+INSERT INTO `profile` VALUES(7, 'hasib', 'khanjan', 3, '', 'hasib@gmail.com', 'khanjan', 'banjan');\
+INSERT INTO `profile` VALUES(11, 'hasib', 'asdf', 2, '', 'asdf@', 'asdf', 'asdf');\
+INSERT INTO `profile` VALUES(12, 'hasib', 'jan', 12, '', 'hasib', 'myname', 'myjan');\
+INSERT INTO `profile` VALUES(13, 'hshsh', 'hshshs', 1, '', 'nznznz', 'nznznx', 'nzjzj');\
+INSERT INTO `profile` VALUES(14, 'hasibkhan', 'goljan', 12, '', 'hasibjan@gmail.com', 'newuser', 'asdf');\
+INSERT INTO `profile` VALUES(17, 'new', 'gfd', 69, 'male', '', 'rgd', 'rfd');\
+INSERT INTO `profile` VALUES(18, 'gv', 'oiu', 58, 'male', '', 'hjk', 'we');\
+INSERT INTO `profile` VALUES(19, 'awer', 'aqwe', 54, 'male', '', 'awe', 'qwe');\
+INSERT INTO `profile` VALUES(20, 'masoom', 'hi', 26, 'male', 'masoom@gmail.com', 'masoom', 'qwerty');\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `purchases`\
+--\
+\
+CREATE TABLE `purchases` (\
+  `ID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Purchase ID',\
+  `P_Id` int(11) NOT NULL COMMENT 'Product ID',\
+  `Pname` varchar(30) NOT NULL,\
+  `Owner_ID` int(20) NOT NULL COMMENT 'Owern of the product',\
+  `Owner_name` varchar(20) NOT NULL COMMENT 'Owner Name',\
+  `R_User_ID` int(11) NOT NULL COMMENT 'Purchase Person ID',\
+  `P_Date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,\
+  `status` varchar(10) NOT NULL COMMENT 'Purchase Status',\
+  PRIMARY KEY (`ID`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;\
+\
+--\
+-- Dumping data for table `purchases`\
+--\
+\
+INSERT INTO `purchases` VALUES(1, 6, 'hi', 0, '', 2, '0000-00-00 00:00:00', 'pending');\
+INSERT INTO `purchases` VALUES(2, 4, 'jaket', 0, '', 5, '2014-04-24 14:13:50', 'pending');\
+INSERT INTO `purchases` VALUES(3, 3, 'shoes', 0, '', 5, '2014-04-24 15:25:27', 'pending');\
+INSERT INTO `purchases` VALUES(4, 2, 'flower', 5, 'hasibullah', 3, '2014-04-26 06:50:33', 'pending');\
+INSERT INTO `purchases` VALUES(5, 1, 'book', 1, 'hasibullah', 2, '2014-07-04 11:55:52', 'pending');\
+INSERT INTO `purchases` VALUES(6, 16, 'hdjxhx', 2, 'Ashin', 2, '2014-07-04 12:10:24', 'pending');\
+INSERT INTO `purchases` VALUES(7, 13, 'my arduino', 2, 'Ashin', 2, '2014-07-04 12:32:43', 'pending');\
+}
