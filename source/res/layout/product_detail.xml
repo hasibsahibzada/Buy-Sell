@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="145dp"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/pprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="169dp"
+        android:text="Price:" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="212dp"
+        android:text="Description:" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="212dp"
+        android:text="Description:" />
+
+    <Button
+        android:id="@+id/Main_page_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="40dp"
+        android:layout_y="379dp"
+        android:text="Main Page" />
+
+    <Button
+        android:id="@+id/purchase_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="171dp"
+        android:layout_y="378dp"
+        android:text="Purchase" />
+
+    <TextView
+        android:id="@+id/p_description_view"
+        android:layout_width="208dp"
+        android:layout_height="132dp"
+        android:layout_x="92dp"
+        android:layout_y="226dp"
+        android:background="#F5F8E8" />
+
+    <TextView
+        android:id="@+id/P_name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="94dp"
+        android:layout_y="144dp"
+        android:text="Product Name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="96dp"
+        android:layout_y="170dp"
+        android:text="$" />
+
+    <TextView
+        android:id="@+id/PPrice_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="108dp"
+        android:layout_y="169dp"
+        android:text="Price" />
+
+    <TextView
+        android:id="@+id/PDetail_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="6dp"
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/p_image_view_detail"
+        android:layout_width="176dp"
+        android:layout_height="114dp"
+        android:layout_x="80dp"
+        android:layout_y="28dp" />
+
+</AbsoluteLayout>

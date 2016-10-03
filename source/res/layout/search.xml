@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Editext for Search -->
+
+
+    <!-- List View -->
+
+    <EditText
+        android:id="@+id/search_box_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="search ..."
+        android:visibility="visible" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_box_input"
+        android:text="Search" />
+
+    <ListView
+        android:id="@+id/search_product_list"
+        android:layout_width="fill_parent"
+        android:layout_height="356dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_btn"
+        android:layout_weight="0.66" >
+    </ListView>
+
+</RelativeLayout>

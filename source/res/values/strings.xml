@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Schneller Spur</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="connection_string" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/Connection_String">http://141.54.152.162/buysell/login.php</string>
+    <string name="Network_IP" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/Network_IP_String">http://141.54.152.162/buysell/login.php</string>
+    
+	     <string name="hello_world">Hello world!</string>
+   
+	<string name="hello">Members Area</string>
+    <string name="u">Username</string>
+    <string name="l">Login</string>
+    <string name="r">Register</string>
+    <string name="i">Upload Image</string>
+    <string name="p">......</string>
+</resources>
